@@ -1,0 +1,595 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.backuu{
+    background: url(image/page3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+ /*******************  Navbar   ***********************/
+@media screen and (max-width:780px){
+    .dew{
+        display: none;
+    }
+}
+nav{
+     height: 3.3vh;
+     align-items: center;
+}
+nav>li a{
+    text-decoration: none;
+    color: white;
+}
+nav>li a:hover{
+    color: white;
+    text-decoration: none;
+}
+.nav-links{
+    margin-right: 3%;
+    display: flex;
+    list-style: none;
+    width: 600px;
+    height: 100%;
+    justify-content: space-around;
+    float: right;
+}
+.nav-links  li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links  li a:hover{
+    color: rgb(204, 204, 204);
+}
+@media screen and (max-width:776px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+       
+    }
+    nav{
+        position: relative;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 3%;
+        top: 130%;
+        transform: translate(-5%,-50%);
+        z-index: 3;
+        
+    }
+    .nav-links{
+    position: fixed;
+    background-color: teal;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 90% -10%);
+    -wibkit-clip-path: circle(70px at 90% -10%);
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+    z-index: 2;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -wibkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    nav>li{
+        margin-top: 13px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    nav>li a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+    nav>li a:hover{
+        color: rgb(189, 189, 189);
+    }
+}
+
+/******************* End Navbar *********************/
+
+/******************* Profile ********************/
+
+.hhhh{
+    font-family: 'Montserrat', sans-serif; color: white; font-size: 20px;
+}
+.hhhhh{
+    font-size: 80px; font-family: 'Montserrat', sans-serif; color: white;
+}
+.ggs{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 70px;
+    flex-direction: row;
+}
+.dipn{
+    display: none;
+}
+.gge{
+    width: 200px;
+}
+.pho{
+    width: 80px;
+    border: 2px solid rgb(119, 119, 204);
+    padding: 20px;
+    border-radius: 10px;
+}
+.disa{
+    margin-top: 14px;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+.disb{
+    color: white;
+}
+/******************* end profile  ********************/
+/******************* Guide 1 *****************/
+
+.gud{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.gud p:first-of-type{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.gud p:nth-of-type(2){
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 65%;
+}
+.gud p:nth-of-type(3){
+    color: rgb(0, 52, 194);
+    float: left;
+    font-size: 48px;
+    margin-bottom:-15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.gud p:nth-of-type(4){
+    color:rgb(0, 52, 194);
+    font-size: 48px;
+    margin-left: 96px;
+    margin-bottom:-15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.gud p:nth-of-type(5){
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    float: left;
+}
+.gud p:last-of-type{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 100px;
+}
+.gud img{
+    width: 60%;
+    border-radius: 15px;
+}
+
+/************ End Guide 1 **************/
+/************* Start Guide 2 *************/
+
+
+.gud2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 100px;
+    align-items: center;
+}
+.gud2 div{
+    margin-left: 40px ;
+}
+.gud2 p:first-of-type{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.gud2 p:nth-of-type(2){
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 65%;
+}
+.gud2 p:last-of-type a{
+    background-color: rgb(0, 4, 255);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding: 14px 20px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.gud2 p:last-of-type{
+    margin-top: 35px;
+}
+.gud2 p:last-of-type a{
+       transition: .2s ease-in-out;
+}
+.gud2 p:last-of-type a:hover{
+    background-color: rgb(65, 68, 241);
+}
+.gud2 img{
+    width: 60%;
+    border-radius: 15px;
+}
+/***********************  End Guide 2   **********************/
+/*********************** Start Services *********************/
+.services{
+    margin-top: 280px;
+}
+.services>p:first-of-type{
+        font-size: 20px;
+        font-weight: 700;
+        color:#0004ff;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+}
+.services>p:nth-of-type(2){
+    margin-top: -20px;
+    font-size: 50px;
+    font-weight: 600;
+    color:  black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.services .sera{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+.services .serb{
+    border: 1px solid #6e71ff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 24%;
+}
+.services .sera img{
+    width: 45px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services .sera p:first-of-type{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.services .sera p:nth-of-type(2){
+    text-align: center;
+    font-weight: 600;
+    color: #8b8b8b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+/***************************** End Services ************************/
+/***************************** Start Price *************************/
+.price {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+/******************** Pri 1 *****************/
+.price .pri1{
+    width: 30%;
+}
+.price .pri1 p:first-of-type{
+    font-size: 45px ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.price .pri1 p:nth-of-type(2){
+    font-size: 20px ;
+    font-family: 'Montserrat', sans-serif;
+}
+/************ Pri2 **************/
+.price .pri2{
+    width: 32%;
+    background-color: #e3e4ff;
+    border-radius: 10px;
+    padding: 45px 50px;
+}
+.price .pri2 p:first-of-type{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+} 
+.price .pri2 p:nth-of-type(2){
+    font-family: 'Montserrat', sans-serif;
+    color:#0004ff;
+    font-weight: 800;
+    font-size: 55px;
+} 
+.price .pri2 p:nth-of-type(3){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+} 
+.price .pri2 ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    list-style: none;
+} 
+.price .pri2 p:last-of-type a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 18px;
+    border: 1px solid #0004ff;
+    border-radius: 5px;
+}
+/******************** Pri3 *******************/
+.price .pri3{
+    width: 32%;
+    border: 2px solid #0004ff;
+    border-radius: 10px;
+    padding: 45px 50px;
+}
+.price .pri3 p:first-of-type{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+} 
+.price .pri3 p:nth-of-type(2){
+    font-family: 'Montserrat', sans-serif;
+    color:#0004ff;
+    font-weight: 800;
+    font-size: 55px;
+} 
+.price .pri3 p:nth-of-type(3){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+} 
+.price .pri3 ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    list-style: none;
+} 
+.price .pri3 p:last-of-type a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #0004ff;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 18px;
+    border-radius: 5px;
+}
+/****************** Contact *********************/
+.contact1{
+    background-image: url('image/page4.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 140px 0;
+}
+.contact1 .conw{
+    width: 60%;
+    margin:auto;
+}
+.contact1 p:first-of-type{
+    font-family: 'Montserrat', sans-serif; 
+    color: #c4c5ff;
+    font-weight: 800;
+    font-size: 22px;
+    text-align: center;
+}
+.contact1 p:nth-of-type(2){
+    font-size: 50px; 
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+.contact1 p:nth-of-type(3) {
+    text-align: center;
+    margin-top: 4rem;
+}
+.contact1 p:nth-of-type(3) a{
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #6e71ff;
+    padding: 20px 44px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/***************** End Contact ********************/
+/****************** Start Footer ********************/
+.dark{
+    background-color: rgb(19, 19, 19);
+    color: rgb(211, 211, 211);
+}
+footer .con{
+    padding: 60px 60px;
+}
+footer a{
+    color: rgb(197, 197, 197);
+}
+footer a:hover{
+    color: rgb(150, 150, 150);
+}
+/******************************* End Footer *****************************/
+
+
+@media only screen and (max-width: 960px) {
+    .hhhhh{
+        font-size: 50px;
+         font-family: 'Montserrat', sans-serif; 
+         color: white;
+    }
+  }
+
+@media only screen and (max-width: 780px) {
+      
+    .price {
+        flex-direction: column;
+    }
+    .price .pri1{
+        width: 80%;
+    }
+    .price .pri2{
+        width: 90%;
+    }
+    .price .pri3{
+        margin-top: 10px;
+        width: 90%;
+    }
+    .ggs{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .gge{
+        width: 300px;
+        margin: 0% auto;
+    }
+    .pho{
+        width: 90px;
+        padding: 27px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .disa{
+        text-align: center;
+    }
+    .disb{
+        text-align: center;
+    }
+      
+    .gud{
+    flex-direction: column;
+    margin-top: 100px;
+    }
+    .gud>div{
+        width: 70%;
+    }
+    
+.gud p:first-of-type{
+    text-align: center;
+}
+.gud p:nth-of-type(2){
+    text-align: center;
+    width: 100%;
+}
+.gud p:nth-of-type(3){
+    color: rgb(0, 52, 194);
+    float: none;
+    font-size: 48px;
+    margin-bottom:0px;
+    text-align: center;
+}
+.gud p:nth-of-type(4){
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom:0;
+    
+}
+.gud p:nth-of-type(5){
+    display: none;
+}
+.gud p:last-of-type{
+      display: none;
+}
+.gud img{
+    width: 90%;
+}
+    
+/****************88 Start Guide two ********/
+
+
+.gud2{
+    flex-direction: column;
+    margin-top: 60px;
+}
+.gud2 div{
+    margin-left: 0px ;
+    margin-top: 30px;
+}
+.gud2 p:first-of-type{
+    text-align: center;
+}
+.gud2 p:nth-of-type(2){
+    text-align: center;
+    width: 100%;
+}
+.gud2 p:last-of-type{
+    text-align: center;
+}
+.gud2 img{
+    width: 90%;
+}
+.services .sera{
+    flex-direction: column;
+ }
+ .services .serb{
+    padding: 80px 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+.services .sera img{
+    width: 60px;
+}
+.services .sera p:first-of-type{
+    font-size: 30px;
+}
+.services .sera p:nth-of-type(2){
+    font-size: 20px;
+    width: 70%;
+    margin: 0% auto;
+}
+.contact1 p:first-of-type{
+    font-size: 20px;
+}
+.contact1 p:nth-of-type(2){
+    font-size: 40px; 
+}
+.contact1 p:nth-of-type(3) {
+    margin-top: 3rem;
+}
+}
+#goup55{
+        background-color: rgb(250, 250, 250);
+        position: absolute;
+        bottom: 13px;
+        right: 13px;
+        position: fixed;
+        font-size: 12px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 1px 1px 10px 0px rgba(26, 26, 26, 0.068);
+        z-index: 4;
+}
